@@ -13,6 +13,7 @@ import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
 import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import net.originkirby.mccourse.block.ModBlocks;
+import net.originkirby.mccourse.item.ModCreativeModeTabs;
 import net.originkirby.mccourse.item.ModItems;
 import org.slf4j.Logger;
 
@@ -25,6 +26,8 @@ public class MCCourseMod {
 
     public MCCourseMod(FMLJavaModLoadingContext context) {
         IEventBus modEventBus = context.getModEventBus();
+
+        ModCreativeModeTabs.register(modEventBus);
 
         ModItems.register(modEventBus);
         ModBlocks.register(modEventBus);
