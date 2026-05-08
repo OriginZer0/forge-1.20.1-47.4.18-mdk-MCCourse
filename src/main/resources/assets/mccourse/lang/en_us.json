@@ -4,6 +4,10 @@
 
   "block.mccourse.alexandrite_block": "Block of Alexandrite",
   "block.mccourse.raw_alexandrite_block": "Raw Block of Alexandrite",
+  "block.mccourse.alexandrite_ore": "Alexandrite Ore",
+  "block.mccourse.deepslate_alexandrite_ore": "Deepslate Alexandrite Ore",
+  "block.mccourse.nether_alexandrite_ore": "Netherrack Alexandrite Ore",
+  "block.mccourse.end_alexandrite_ore": "Endstone Alexandrite Ore",
 
 
   "creativetab.course_tab": "Course Tab"
