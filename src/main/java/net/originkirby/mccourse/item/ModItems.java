@@ -6,6 +6,7 @@ import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
 import net.originkirby.mccourse.MCCourseMod;
+import net.originkirby.mccourse.item.custom.FuelItem;
 import net.originkirby.mccourse.item.custom.MetalDetectorItem;
 
 public class ModItems {
@@ -23,6 +24,9 @@ public class ModItems {
 
     public static final RegistryObject<Item> KOHLRABI = ITEMS.register("kohlrabi",
             () -> new Item(new Item.Properties().food(ModFoodProperties.KOHLRABI)));
+
+    public static final RegistryObject<Item> PEAT_BRICK = ITEMS.register("peat_brick",
+            () -> new FuelItem(new Item.Properties(), 200));
 
 
 
