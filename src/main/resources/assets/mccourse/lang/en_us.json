@@ -15,6 +15,9 @@
 
   "item.mccourse.metal_detector.no_valuable": "No Metals Found",
 
+  "tooltip.mccourse.metal_detector.tooltip" : "Right Click on Blocks to find Metals! Press §eSHIFT§r for list.",
+  "tooltip.mccourse.metal_detector.tooltip.shift" : "Finds Iron, Gold, Copper, and Ancient Debris.",
+  "tooltip.mccourse.sound_block" : "Plays sounds when right-clicking or when walked on.",
 
   "creativetab.course_tab": "Course Tab"
 
