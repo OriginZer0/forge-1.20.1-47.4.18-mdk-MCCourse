@@ -13,6 +13,9 @@
   "block.mccourse.nether_alexandrite_ore": "Netherrack Alexandrite Ore",
   "block.mccourse.end_alexandrite_ore": "Endstone Alexandrite Ore",
 
+  "block.mccourse.alexandrite_stairs": "Alexandrite Stairs",
+  "block.mccourse.alexandrite_slab": "Alexandrite Slab",
+
   "item.mccourse.metal_detector.no_valuable": "No Metals Found",
 
   "tooltip.mccourse.metal_detector.tooltip" : "Right Click on Blocks to find Metals! Press §eSHIFT§r for list.",

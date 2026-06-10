@@ -45,8 +45,26 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
 
         nineBlockStorageRecipes(consumer, RecipeCategory.MISC, ModItems.RAW_ALEXANDRITE.get(), RecipeCategory.MISC, ModBlocks.RAW_ALEXANDRITE_BLOCK.get(),
                 "mccourse:raw_alexandrite", "alexandrite", "mccourse:raw_alexandrite_block", "alexandrite");
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModBlocks.ALEXANDRITE_SLAB.get(), 6)
+                .pattern("AAA")
+                .define('A', ModBlocks.ALEXANDRITE_BLOCK.get())
+                .unlockedBy("has_alexandrite", inventoryTrigger(ItemPredicate.Builder.item()
+                        .of(ModItems.ALEXANDRITE.get()).build()))
+                .save(consumer);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModBlocks.ALEXANDRITE_STAIRS.get(), 4)
+                .pattern("A  ")
+                .pattern("AA ")
+                .pattern("AAA")
+                .define('A', ModBlocks.ALEXANDRITE_BLOCK.get())
+                .unlockedBy("has_alexandrite", inventoryTrigger(ItemPredicate.Builder.item()
+                        .of(ModItems.ALEXANDRITE.get()).build()))
+                .save(consumer);
+
         oreSmelting(consumer, ALEXANDRITE_SMELTABLES, RecipeCategory.MISC, ModItems.ALEXANDRITE.get(), 0.25f, 200, "alexandrite");
         oreBlasting(consumer, ALEXANDRITE_SMELTABLES, RecipeCategory.MISC, ModItems.ALEXANDRITE.get(), 0.3f, 100, "alexandrite");
+
 
     }
 

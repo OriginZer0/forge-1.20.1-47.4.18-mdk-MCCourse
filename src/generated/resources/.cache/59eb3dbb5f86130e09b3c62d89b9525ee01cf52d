@@ -1,6 +1,8 @@
-// 1.20.1	2026-05-25T16:51:38.1850552	Loot Tables
+// 1.20.1	2026-06-10T16:05:06.3695051	Loot Tables
 3c04bafc8e377b8b3a0acec4fb355ebe506bd32a data/mccourse/loot_tables/blocks/alexandrite_block.json
 173e2b752487e499d222c8b2083fdff6389c81f0 data/mccourse/loot_tables/blocks/alexandrite_ore.json
+cc29b2bba8edc06773081536354828bdfaa3167c data/mccourse/loot_tables/blocks/alexandrite_slab.json
+70fab8983f4f8d670d47e55156fc769bf1f8a132 data/mccourse/loot_tables/blocks/alexandrite_stairs.json
 b0965d5fcc738eee398078e790faa2b0f6bff73e data/mccourse/loot_tables/blocks/deepslate_alexandrite_ore.json
 08f5d7f2440a42a8c3fa64de764e8b8cf9e90bd1 data/mccourse/loot_tables/blocks/end_alexandrite_ore.json
 07b730d603378c298d6630dd5c2fd8c3398ecea7 data/mccourse/loot_tables/blocks/nether_alexandrite_ore.json

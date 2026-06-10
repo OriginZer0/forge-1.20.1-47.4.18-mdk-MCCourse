@@ -2,6 +2,8 @@
   "values": [
     "mccourse:alexandrite_block",
     "mccourse:raw_alexandrite_block",
-    "mccourse:alexandrite_ore"
+    "mccourse:alexandrite_ore",
+    "mccourse:alexandrite_slab",
+    "mccourse:alexandrite_stairs"
   ]
 }

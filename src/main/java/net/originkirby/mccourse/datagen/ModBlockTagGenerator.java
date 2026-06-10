@@ -35,7 +35,12 @@ public class ModBlockTagGenerator extends BlockTagsProvider {
                         ModBlocks.ALEXANDRITE_ORE.get(),
                         ModBlocks.NETHER_ALEXANDRITE_ORE.get(),
                         ModBlocks.DEEPSLATE_ALEXANDRITE_ORE.get(),
-                        ModBlocks.END_ALEXANDRITE_ORE.get());
+                        ModBlocks.END_ALEXANDRITE_ORE.get(),
+
+                        ModBlocks.ALEXANDRITE_STAIRS.get(),
+                        ModBlocks.ALEXANDRITE_SLAB.get()
+                );
+
 
         this.tag(BlockTags.MINEABLE_WITH_AXE)
                 .add(ModBlocks.SOUND_BLOCK.get());
@@ -48,7 +53,9 @@ public class ModBlockTagGenerator extends BlockTagsProvider {
                 .add(ModBlocks.ALEXANDRITE_BLOCK.get(),
                         ModBlocks.RAW_ALEXANDRITE_BLOCK.get(),
 
-                        ModBlocks.ALEXANDRITE_ORE.get()
+                        ModBlocks.ALEXANDRITE_ORE.get(),
+                        ModBlocks.ALEXANDRITE_SLAB.get(),
+                        ModBlocks.ALEXANDRITE_STAIRS.get()
                         );
 
         this.tag(BlockTags.NEEDS_STONE_TOOL)

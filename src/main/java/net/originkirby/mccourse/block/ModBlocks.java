@@ -3,10 +3,7 @@ package net.originkirby.mccourse.block;
 import net.minecraft.util.valueproviders.UniformInt;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
-import net.minecraft.world.level.block.Block;
-import net.minecraft.world.level.block.Blocks;
-import net.minecraft.world.level.block.DropExperienceBlock;
-import net.minecraft.world.level.block.SoundType;
+import net.minecraft.world.level.block.*;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraft.world.level.block.state.properties.NoteBlockInstrument;
 import net.minecraft.world.level.material.MapColor;
@@ -32,6 +29,7 @@ public class ModBlocks {
             () -> new Block(BlockBehaviour.Properties.of().mapColor(MapColor.METAL).instrument(NoteBlockInstrument.IRON_XYLOPHONE)
                     .requiresCorrectToolForDrops().strength(5.0F, 6.0F).sound(SoundType.METAL)));
 
+
     public static final RegistryObject<Block> ALEXANDRITE_ORE = registerBlock("alexandrite_ore",
             () -> new DropExperienceBlock(BlockBehaviour.Properties.copy(Blocks.STONE)
                     .strength(5f).requiresCorrectToolForDrops(), UniformInt.of(2,5 )));
@@ -48,13 +46,17 @@ public class ModBlocks {
             () -> new DropExperienceBlock(BlockBehaviour.Properties.copy(Blocks.END_STONE)
                     .strength(5f).requiresCorrectToolForDrops(), UniformInt.of(5,8)));
 
+
     public static final RegistryObject<Block> SOUND_BLOCK = registerBlock("sound_block",
             () -> new SoundBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK)));
 
 
+    public static final RegistryObject<Block> ALEXANDRITE_STAIRS = registerBlock("alexandrite_stairs",
+            () -> new StairBlock(() -> ModBlocks.ALEXANDRITE_BLOCK.get().defaultBlockState(),
+                    BlockBehaviour.Properties.copy(Blocks.GRANITE_STAIRS).sound(SoundType.METAL)));
 
-
-
+    public static final RegistryObject<Block> ALEXANDRITE_SLAB = registerBlock("alexandrite_slab",
+            () -> new SlabBlock(BlockBehaviour.Properties.copy(Blocks.GRANITE_SLAB).sound(SoundType.METAL)));
 
 
 
