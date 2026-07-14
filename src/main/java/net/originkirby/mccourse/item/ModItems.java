@@ -8,6 +8,7 @@ import net.minecraftforge.registries.RegistryObject;
 import net.originkirby.mccourse.MCCourseMod;
 import net.originkirby.mccourse.item.custom.FuelItem;
 import net.originkirby.mccourse.item.custom.MetalDetectorItem;
+import net.originkirby.mccourse.item.custom.PaxelItem;
 
 public class ModItems {
     public static final DeferredRegister<Item> ITEMS =
@@ -38,6 +39,9 @@ public class ModItems {
             () -> new ShovelItem(ModToolTiers.ALEXANDRITE, 1, 3, new Item.Properties().durability(256)));
     public static final RegistryObject<Item> ALEXANDRITE_HOE = ITEMS.register("alexandrite_hoe",
             () -> new HoeItem(ModToolTiers.ALEXANDRITE, 1, 4, new Item.Properties().durability(256)));
+
+    public static final RegistryObject<Item> ALEXANDRITE_PAXEL = ITEMS.register("alexandrite_paxel",
+            () -> new PaxelItem(ModToolTiers.ALEXANDRITE, 1, 4, new Item.Properties().durability(256)));
 
 
 
