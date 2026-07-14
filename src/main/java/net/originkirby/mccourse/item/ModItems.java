@@ -7,6 +7,7 @@ import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
 import net.originkirby.mccourse.MCCourseMod;
 import net.originkirby.mccourse.item.custom.FuelItem;
+import net.originkirby.mccourse.item.custom.HammerItem;
 import net.originkirby.mccourse.item.custom.MetalDetectorItem;
 import net.originkirby.mccourse.item.custom.PaxelItem;
 
@@ -42,6 +43,9 @@ public class ModItems {
 
     public static final RegistryObject<Item> ALEXANDRITE_PAXEL = ITEMS.register("alexandrite_paxel",
             () -> new PaxelItem(ModToolTiers.ALEXANDRITE, 1, 4, new Item.Properties().durability(256)));
+
+    public static final RegistryObject<Item> ALEXANDRITE_HAMMER = ITEMS.register("alexandrite_hammer",
+            () -> new HammerItem(ModToolTiers.ALEXANDRITE, 1, 4, new Item.Properties().durability(256)));
 
 
 
