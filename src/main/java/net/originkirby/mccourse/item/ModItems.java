@@ -6,10 +6,7 @@ import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
 import net.originkirby.mccourse.MCCourseMod;
-import net.originkirby.mccourse.item.custom.FuelItem;
-import net.originkirby.mccourse.item.custom.HammerItem;
-import net.originkirby.mccourse.item.custom.MetalDetectorItem;
-import net.originkirby.mccourse.item.custom.PaxelItem;
+import net.originkirby.mccourse.item.custom.*;
 
 public class ModItems {
     public static final DeferredRegister<Item> ITEMS =
@@ -31,7 +28,7 @@ public class ModItems {
             () -> new FuelItem(new Item.Properties(), 200));
 
     public static final RegistryObject<Item> ALEXANDRITE_SWORD = ITEMS.register("alexandrite_sword",
-            () -> new SwordItem(ModToolTiers.ALEXANDRITE, 2, 3, new Item.Properties().durability(256)));
+            () -> new SlowingSwordItem(ModToolTiers.ALEXANDRITE, 2, 3, new Item.Properties().durability(256)));
     public static final RegistryObject<Item> ALEXANDRITE_PICKAXE = ITEMS.register("alexandrite_pickaxe",
             () -> new PickaxeItem(ModToolTiers.ALEXANDRITE, 1, 2, new Item.Properties().durability(256)));
     public static final RegistryObject<Item> ALEXANDRITE_AXE = ITEMS.register("alexandrite_axe",
